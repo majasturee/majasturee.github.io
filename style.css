@@ -1,0 +1,150 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+:root{
+    --navbar-height :var 59px;
+}
+/* flex karna se jitni bhi cheeza uppar nicha ha voh ek row ki form mae ajayanga  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+/* logo and image */
+#logo{
+    margin:10px 38px;
+
+}
+#logo img{
+    margin:10px 10px;
+    height: 56px;
+    border-radius: 40px;
+
+}
+#logo a{
+    text-decoration: none;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+/* agr a mae padding denga to jo hover karenga usma kaam ayanga kynki agrb bina */
+/* uska sidha li mae pading denga to khali space bech mae bach jayagii */
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    display: block;
+    color: black;
+    background-color: white;
+   
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#home::before{
+   content: "";
+   position: absolute;
+    background:url('background.jpg') no-repeat center center/cover;
+    /* issa image puri trh se ajati ha  */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;   
+}
+
+/* utility clases */
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #644545;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* services section  */
+.center{
+    text-align:center;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.mnk{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #644545;
+    color: white;
+    margin: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+
+}
+.mnk:hover{
+    background-color: white;
+
+}
+#home button{
+    width: 130px;
+}
+#home button a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#home button a:hover{
+    color: black;
+    font-style: italic;
+    display: block;
+}
