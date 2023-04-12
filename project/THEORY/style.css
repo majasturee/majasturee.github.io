@@ -1,0 +1,38 @@
+body{
+    background-color: #ffff;
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px ;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;   
+}
+footer{
+    background-color:#6f4e37;
+    color: black;
+    padding: 10PX;
+    text-align: center;
+}
+code
+{
+    background-color: #ffcbcb;
+}
+.heading{
+    background-color: #7c73e6;
+}
+dt{
+   background-color: #e3f6f5;
+}
+dd{
+    background-color: #bae8e8;
+}
+p{
+    background-color: #e3f6f5;
+}
+li{
+    background-color: #bae8e8;
+}
